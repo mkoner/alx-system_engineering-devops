@@ -1,2 +1,2 @@
-#!/bin:bash
+#!/bin/bash
 echo "obase=2; ibase=10; $BINARY" | bc
