@@ -4,4 +4,5 @@ sudo pkill -f apache2
 sudo sed -i 's/#user www-data/user nginx/' /etc/nginx/nginx.conf
 sudo sed -i 's/listen 80 default_server/listen 8080 default_server/' /etc/nginx/sites-available/default
 sudo chmod 644 /etc/nginx/nginx.conf
-sudo -u nginx service nginx restart
+sudo service nginx stop
+sudo -u nginx service nginx start
